@@ -12,6 +12,8 @@ Be sure to read this entire document before you attempt to work with the quickst
 
 * [Available Quickstarts](#available-quickstarts): List of the available quickstarts and details about each one.
 
+* [Running with Vagrant](#running-with-vagrant): How to stand up a development environment VM using Vagrant automation
+
 * [Suggested Approach to the Quickstarts](#suggested-approach-to-the-quickstarts): A suggested approach on how to work with the quickstarts.
 
 * [System Requirements](#system-requirements): List of software required to run the quickstarts.
@@ -23,6 +25,7 @@ Be sure to read this entire document before you attempt to work with the quickst
 * [Run the Arquillian Tests](#run-the-arquillian-tests): How to run the Arquillian tests provided by some of the quickstarts.
 
 * [Optional Components](#optional-components): How to install and configure optional components required by some of the quickstarts.
+
 
 
 Available Quickstarts
@@ -47,6 +50,17 @@ We suggest you approach the quickstarts as follows:
 * If you are a beginner or new to JBoss, start with the quickstarts labeled **Beginner**, then try those marked as **Intermediate**. When you are comfortable with those, move on to the **Advanced** quickstarts.
 * Some quickstarts are based upon other quickstarts but have expanded capabilities and functionality. If a prerequisite quickstart is listed, be sure to deploy and test it before looking at the expanded version.
 
+Running with Vagrant
+--------------------
+
+The following sections show how to manually setup an environment to run these projects. An automated solution is available.
+
+1. Install Vagrant (www.vagrantup.com)
+2. Install Virtual Box (www.virtualbox.org)
+3. Anywhere within this project execute the command `vagrant up`. This creates the development VM.
+4. Run `vagrant ssh` to login to the VM. The `\vagrant` folder has all of the quickstarts mounted.
+5. You can now build and run projects as described in [Run the Quickstarts](#run-the-quickstarts)
+6. To access deployed projects, open your host web browser and go to [http://localhost:8082/].
 
 System Requirements
 -------------------
